@@ -1,0 +1,13 @@
+py -m venv env
+
+source env/Scripts/activate
+
+source env/Scripts/deactivate
+
+pip install fastapi uvicorn sqlalchemy pymysql
+
+
+pip list | freeze
+
+
+uvicorn main:app --reload
